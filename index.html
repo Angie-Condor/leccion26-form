@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lección 26 - Formulario</title>
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lección 26 - Formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <section class="box-form">
+      <form class="" action="index.html" method="post">
+        <h2>Formulario</h2>
+        <div class="box-name ">
+          <label for="name">Nombres</label>
+          <input type="text" id="name" placeholder="Ingrese su nombre" pattern="^[a-zA-Zñá-ú+\s]*$" title="La 1ra letra debe ser mayúscula" required="">
+        </div>
+        <div class="box-lastname ">
+          <label for="lastname">Apellidos</label>
+          <input type="text" id="name" placeholder="Ingrese su apellido" pattern="^[A-Z]{1}[a-zñá-ú]" title="La 1ra letra debe ser mayúscula" required="">
+        </div>
+        <div class="box-dni ">
+          <label for="dni">DNI</label>
+          <input type="text" id="dni" placeholder="Ingrese su número de DNI" required="" pattern="[^a-zA-Z]">
+        </div>
+        <div class="box-birthday ">
+          <label for="birthday">Fecha de Nacimiento</label>
+          <input type="text" id="birthday" placeholder="Ingrese su fecha de nacimiento" autofocus="" required="" pattern="">
+        </div>
+        <div class="box-cell ">
+          <label for="cell" >Celular</label>
+          <input type="text" id="cell" placeholder="Ingrese su número de celular" required="" pattern="">
+        </div>
+        <div class="box-phone ">
+          <label for="phone" >Teléfono de casa</label>
+          <input type="text" id="phone" placeholder="Ingrese su número de teléfono de casa">
+        </div>
+        <div class="box-pass ">
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" placeholder="Ingrese su contraseña">
+        </div>
+        <div class="box-pass-conf">
+          <label for="pass-conf">Confirmación de Contraseña</label>
+          <input type="password" id="pass-conf" placeholder="Ingrese la confirmación de su contraseña">
+        </div>
+        <div class="box-comments">
+          <label for="comments">Deje su comentario</label>
+          <textarea name="name" rows="8" cols="80" placeholder="Deje su comentario aquí..."></textarea>
+        </div>
+        <div class="checkbox ">
+          <input type="checkbox" value="remember-me">
+          <span>Términos y condiciones</span>
+        </div>
+        <button type="submit" name="button">Registrar</button>
+      </form>
+      </section>
+      <script type="text/javascript" src="js/main.js"></script>
+  </body>
 </html>
